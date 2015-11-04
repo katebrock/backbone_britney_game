@@ -1,9 +1,3 @@
-// var game= Backpone.view.extend({
-//   tagName:
-//   className:
-// })
-
-
 
 var Router= Backbone.Router.extend({
   routes: {
@@ -15,13 +9,18 @@ var Router= Backbone.Router.extend({
     //url routes//  //function names//
   },
       main: function(){
-        $('.container').html("Loading...");
-        setTimeout(function(){
-          window.location.href="#menu"
-          $('.load').css({
-            "display": "none"            //cannot figure out why it wont desplay none//
-          })
-          },4000);
+        $('.container').html('<span class="oops">Oops, you did it again...</span>');
+        // <audio src="/assets/wibn.mp3" preload="auto" controls></audio>
+        /////////tried 2 different ways to get bspears to play on the loading page:(
+        // $(document).ready(function() {
+        //   $("#my_audio").get(0).play();
+        //     });
+          setTimeout(function(){
+            window.location.href="#menu"
+            $('.load').css({
+              "display": "none"            //cannot figure out why it wont desplay none//
+            })
+            },4000);
       },
       menu: function(){
         // $('body').html('<a href="#"><p>you are so cool</p>');
@@ -31,15 +30,15 @@ var Router= Backbone.Router.extend({
 
       },
       screen: function(){
-        $('.container').html('<a href="#screen"><p>wow what a day!</p>');
+        $('.container').html('<input class="button" type="button" value="play"><input class="rightbutton" type="button" value="restart">');
       },
 
       leaderboard: function() {
-        $('.container').html('<a href="#leaderboard"><p>this is a leaderboard</p>')
+        $('.container').html('<table class="button" style="width:100%"><tr><td>FIRST</td><td>SECOND</td><td>THIRD</td></tr><tr><td>KMB</td><td>HSJ</td><td>ASS</td></tr>')
       },
 
       settings: function() {
-        $('.container').html('<a href="#setting"><p>this is settings</p>')
+        $('.container').html('<a href="email" class="button" ><span>CONTACT US</span></a><a href="#" class="button"><span>MAIN MENU</span></a>')
       }
 });
 

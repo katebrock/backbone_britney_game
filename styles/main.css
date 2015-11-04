@@ -1,7 +1,81 @@
 body {
   background-image: url("../assets/bs.jpg"); }
 
-.css {
+.menuBar {
+  height: 600px; }
+
+.left {
+  width: 307px;
+  margin-top: 40px;
+  display: inline-block; }
+
+.right {
+  margin-top: 40px;
+  float: right; }
+
+.load {
+  background-color: #EE9FCE;
+  border: 2px solid #35639D;
+  border-radius: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none; }
+
+.oops {
+  color: #F5F6FB;
+  font-size: 24px;
+  background-color: #EE9FCE;
+  border: 2px solid #35639D;
+  border-radius: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  margin-top: 20px; }
+
+.buttonStyle {
+  color: #F5F6FB;
+  font-size: 24px;
+  background-color: #EE9FCE;
+  border: 2px solid #35639D;
+  border-radius: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  margin-top: 20px; }
+
+.container {
+  width: 100%; }
+
+.button {
+  color: #F5F6FB;
+  margin-left: 40px;
+  font-size: 24px;
+  background-color: #EE9FCE;
+  border: 2px solid #35639D;
+  border-radius: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  margin-top: 20px; }
+
+.rightbutton {
+  float: right;
+  margin-right: 50px;
+  color: #F5F6FB;
+  font-size: 24px;
+  background-color: #EE9FCE;
+  border: 2px solid #35639D;
+  border-radius: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  margin-top: 20px; }
+
+.contact {
+  text-decoration: none;
+  margin-right: 50px;
+  color: #F5F6FB;
+  font-size: 24px;
   background-color: #EE9FCE;
   border: 2px solid #35639D;
   border-radius: 6px;
